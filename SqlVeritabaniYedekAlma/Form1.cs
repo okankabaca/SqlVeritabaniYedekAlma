@@ -14,11 +14,14 @@ namespace SqlVeritabaniYedekAlma
         
         private void btnKopyala_Click(object sender, EventArgs e)
         {
-            var connectionString = @"SERVER=TOSHIBA;Database=dbStaj;uId=Toshiba\okan;Integrated Security=True";
             String sourceDb = txtSourceDb.Text;
             String sourceTable = txtSourceTable.Text;
             String targetDb = txtTargetDb.Text;
             String targetTable = txtTargetTable.Text;
+            String serverName=txtServer.Text;
+            String userID=txtUserID.Text;
+
+            var connectionString = $@"SERVER={serverName};Database={sourceDb};uId={userID};Integrated Security=True";
             SqlConnection connection = new SqlConnection(connectionString);
 
             connection.Open();

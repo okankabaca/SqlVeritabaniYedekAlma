@@ -37,6 +37,10 @@
             this.txtSourceTable = new System.Windows.Forms.TextBox();
             this.txtTargetDb = new System.Windows.Forms.TextBox();
             this.txtTargetTable = new System.Windows.Forms.TextBox();
+            this.txtServer = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtUserID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnKopyala
@@ -113,11 +117,47 @@
             this.txtTargetTable.Size = new System.Drawing.Size(100, 20);
             this.txtTargetTable.TabIndex = 8;
             // 
+            // txtServer
+            // 
+            this.txtServer.Location = new System.Drawing.Point(366, 12);
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Size = new System.Drawing.Size(100, 20);
+            this.txtServer.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(283, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Server Adı";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(283, 44);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Kullanıcı Adı";
+            // 
+            // txtUserID
+            // 
+            this.txtUserID.Location = new System.Drawing.Point(366, 38);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(100, 20);
+            this.txtUserID.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 301);
+            this.ClientSize = new System.Drawing.Size(500, 186);
+            this.Controls.Add(this.txtUserID);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtServer);
             this.Controls.Add(this.txtTargetTable);
             this.Controls.Add(this.txtTargetDb);
             this.Controls.Add(this.txtSourceTable);
@@ -145,6 +185,10 @@
         private System.Windows.Forms.TextBox txtSourceTable;
         private System.Windows.Forms.TextBox txtTargetDb;
         private System.Windows.Forms.TextBox txtTargetTable;
+        private System.Windows.Forms.TextBox txtServer;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtUserID;
     }
 }
 
